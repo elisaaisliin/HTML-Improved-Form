@@ -14,10 +14,18 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html">
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <label for="firstname">Your First Name<span class="required-field">*</span>
+                </label>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35" required>
+                <label for="lastname">Your Last Name<span class="required-field">*</span>
+                </label>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required>
+                <label for="age">Your Age<span class="required-field">*</span> </label> 
+                <input type="number" id="age" name="age" min="21" max="120" >
+                <h5> one must be 21 years or older to enter the contest.</h5>
+                <label for="zipcode">Your Zip Code<span class="required-field">*</span></label>
+                <input type="number" id="zipcode" name="zipcode" >
+                
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
